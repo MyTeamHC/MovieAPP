@@ -1,0 +1,55 @@
+header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #042036;
+  height: 64px;
+  width: 100%;
+  z-index: 10;
+  transition: top 0.2s linear;
+}
+
+.navbar{
+  width: 100%;
+  overflow-y: auto;
+  flex-wrap: nowrap;
+  padding-bottom: 0;
+
+  @media(min-width: 768px){
+  justify-content: center;
+  }
+
+  a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: all 0.3s;
+    cursor: pointer;
+
+    &.active{
+      color: #14bece;
+    }
+
+    &.btn-danger{
+      padding: 6px ;
+    }
+  }
+
+  
+}
+
+
+/* Add a red background color to navbar links on hover */
+.navbar a:hover{
+  color: #14bece;
+}
+.dropbtn{
+  color: #d09da2 !important;
+}
+

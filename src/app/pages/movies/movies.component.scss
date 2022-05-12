@@ -1,0 +1,100 @@
+@import "/src/app/shared.scss";
+
+.pagination-wrapper {
+  margin-top: 40px;
+
+  ngb-pagination ::ng-deep ul > li:not(.active) > a {
+    background-color: #032541;
+    color: white;
+    border-color: #032541;
+  }
+
+  ngb-pagination ::ng-deep ul > li.active > a {
+    background-color: #144166;
+    border-color: #144166;
+    border-radius: 5px;
+  }
+}
+
+.filter {
+  text-align: center;
+  border-radius: 5px;
+  padding: 10px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 9;
+  transition: all 1s;
+  cursor: pointer;
+
+  .genres,
+  .keywords {
+    text-align: center;
+    margin-top: 30px;
+    padding: 0;
+
+    li {
+      cursor: pointer;
+      display: inline-block;
+      padding: 8px 16px 10px 16px;
+      font-size: 14px;
+      font-weight: 600;
+      line-height: 1;
+      text-transform: uppercase;
+      color: #fff;
+      margin-bottom: 10px;
+      transition: all 0.3s ease-in-out;
+      border-radius: 4px;
+      background: #042038;
+      margin-right: 5px;
+
+      &:hover {
+        transform: translateY(-2px);
+      }
+
+      &.active {
+        background: #216289;
+      }
+
+      &.passive {
+        background: #042038 !important;
+      }
+    }
+  }
+
+  .genres{
+    &.hide{
+      display: none;
+    }
+  }
+
+  .nav-tabs {
+    align-items: center;
+    justify-content: center;
+    border-color: #0b2943;
+    padding-bottom: 10px;
+
+    .nav-link {
+      border-radius: 30px;
+      padding: 1px 15px;
+      transition: all 0.6s;
+      color: white;
+      border: none;
+
+      &:hover {
+        background: #0b355a;
+        color: white;
+      }
+      &.active {
+        background: #0d3354;
+        color: white;
+      }
+    }
+  }
+}
+
+header {
+  background: transparent;
+  padding: 0;
+  margin-top: 20px;
+}
